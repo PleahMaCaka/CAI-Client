@@ -2,20 +2,14 @@ import { app, BrowserWindow } from 'electron'
 
 function createWindow() {
     const win = new BrowserWindow({
-        title: "vite-react-electron",
-        width: 800,
-        height: 800,
-        // webPreferences: {
-        //     preload: path.join(__dirname, 'preload.js')
-        // },
-        alwaysOnTop: true,
-        transparent: true,
+        title: "CAI Client",
+        width: 1280,
+        height: 720,
         autoHideMenuBar: true,
-        skipTaskbar: true,
-        frame: false
     })
 
     if (process.env.VITE_DEV_SERVER_URL) {
+        win.setAlwaysOnTop(true) // for dev
         win.loadURL(process.env.VITE_DEV_SERVER_URL)
     } else {
         win.loadFile('dist/index.html');
