@@ -1,4 +1,4 @@
-import "../styles/history-frame.css"
+import "../../styles/frames/history-frame.css"
 
 export default function HistoryFrame() {
   return (

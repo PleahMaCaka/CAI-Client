@@ -1,5 +1,5 @@
 import './App.css'
-import MainFrame from './components/main-frame'
+import MainFrame from './components/frames/main-frame'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 
 export default function App() {

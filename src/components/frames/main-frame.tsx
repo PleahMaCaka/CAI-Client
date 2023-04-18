@@ -1,6 +1,6 @@
 import CharsFrame from "./chars-frame"
 import HistoryFrame from "./history-frame"
-import "../styles/main-frame.css"
+import "../../styles/frames/main-frame.css"
 import ChatFrame from "./chat-frame"
 
 

@@ -1,4 +1,4 @@
-import "../styles/chat-frame.css"
+import "../../styles/frames/chat-frame.css"
 
 export default function ChatFrame() {
   return (

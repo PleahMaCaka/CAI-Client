@@ -1,15 +1,7 @@
-import "../styles/chars-frame.css"
-import HomeSVG from "../assets/home.svg"
-import { useState } from "react"
+import "../../styles/frames/chars-frame.css"
+import HomeSVG from "../../assets/home.svg"
 
 export default function CharsFrame() {
-  
-  const [show, setShow] = useState(false)
-
-  const addCharacter = () => {
-
-  }
-
   return (
     <>
       <div id="chars-frame">
