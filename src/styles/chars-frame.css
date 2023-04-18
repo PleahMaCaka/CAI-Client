@@ -2,4 +2,21 @@
   background-color: lightgray;
   height: 100vh;
   width: 72px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.center-icon {
+  align-self: center;
+  height: 48px;
+  width: 48px;
+
+  border-radius: 40%;
+}
+
+.add-btn {
+  font-size: 40px;
+  font-weight: normal;
 }

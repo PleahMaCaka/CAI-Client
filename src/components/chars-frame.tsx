@@ -5,6 +5,9 @@ export default function CharsFrame() {
     <>
       <div id="chars-frame">
         Chars
+        <button className="center-icon add-btn">
+          +
+        </button>
       </div>
     </>
   )
