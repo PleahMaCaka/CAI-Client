@@ -19,7 +19,9 @@
   margin-top: 8px;
 }
 
-#home { margin-bottom: 8px; }
+#home {
+  margin-bottom: 8px;
+}
 
 .center {
   align-self: center;
