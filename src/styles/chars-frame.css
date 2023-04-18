@@ -8,15 +8,29 @@
   justify-content: left;
 }
 
-.center-icon {
+#add-btn {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+#contour {
+  background-color: black;
+  border-right: 36px solid black;
+  margin-top: 8px;
+}
+
+#home { margin-bottom: 8px; }
+
+.center {
   align-self: center;
   height: 48px;
   width: 48px;
 
   border-radius: 40%;
+  margin-top: 8px;
 }
 
-.add-btn {
-  font-size: 40px;
-  font-weight: normal;
+.center:hover {
+  filter: brightness(80%);
+  transition: all ease 0.3s 0s;
 }
