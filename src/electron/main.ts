@@ -9,7 +9,6 @@ function createWindow() {
     })
 
     if (process.env.VITE_DEV_SERVER_URL) {
-        win.setAlwaysOnTop(true) // for dev
         win.loadURL(process.env.VITE_DEV_SERVER_URL)
     } else {
         win.loadFile('dist/index.html');
