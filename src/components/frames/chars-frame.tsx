@@ -1,12 +1,10 @@
 import "../../styles/frames/chars-frame.css"
 import HomeSVG from "../../assets/home.svg"
-import ModalContainer from "../modals/modal-container"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { openAddCharModal } from "../../redux/AddCharModalSlice"
-import { RootState } from "../../redux/Store";
+import AddCharModal from "../modals/add-character-modal";
 
 export default function CharsFrame() {
-  const isOpen = useSelector((state: RootState) => state.addCharModal.isOpen)
   const dispatch = useDispatch()
 
   return (
@@ -20,7 +18,7 @@ export default function CharsFrame() {
         <button id="add-btn" className="center" onClick={() => dispatch(openAddCharModal())}>
           +
         </button>
-        {isOpen ? <ModalContainer/> : null}
+        <AddCharModal/>
       </div>
     </>
   )

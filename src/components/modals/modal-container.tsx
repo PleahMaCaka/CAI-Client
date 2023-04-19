@@ -1,14 +1,26 @@
 import "../../styles/modals/modal-container.css"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { closeAddCharModal } from "../../redux/AddCharModalSlice"
+import { RootState } from "../../redux/Store"
+import React from "react"
 
-export default function ModalContainer() {
+
+type ModalContainerProps = {
+  children?: React.ReactNode
+}
+
+export default function ModalContainer(props: ModalContainerProps) {
   const dispatch = useDispatch()
+  const isOpen = useSelector((state: RootState) => state.addCharModal.isOpen)
 
   return (
-    <div
-      className="modal-container"
-      onClick={() => dispatch(closeAddCharModal())}
-    />
+    <>
+      <div
+        className={isOpen ? "modal-container" : "modal-container modal-hidden"}
+        onClick={() => dispatch(closeAddCharModal())}
+      >
+        {props.children}
+      </div>
+    </>
   )
 }

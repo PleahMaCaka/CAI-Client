@@ -11,4 +11,31 @@
 
   width: 100vw;
   height: 100vh;
+
+  animation: fadein 150ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-hidden {
+  animation: fadeout 150ms;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

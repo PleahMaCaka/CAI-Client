@@ -1,0 +1,35 @@
+#add-char-modal {
+  z-index: 101;
+  visibility: unset;
+
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: modal-appear 0.5s ease-in-out;
+}
+
+@keyframes modal-appear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
