@@ -6,10 +6,12 @@ import ChatFrame from "./chat-frame"
 
 export default function MainFrame() {
   return (
-    <div id="main-frame">
-      <CharsFrame/>
-      <HistoryFrame/>
-      <ChatFrame/>
-    </div>
+    <>
+      <div id="main-frame">
+        <CharsFrame/>
+        <HistoryFrame/>
+        <ChatFrame/>
+      </div>
+    </>
   )
 }
