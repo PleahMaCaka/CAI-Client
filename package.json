@@ -34,7 +34,7 @@
     "@types/react-redux": "^7.1.25",
     "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react-swc": "^3.3.0",
-    "electron": "^24.1.0",
+    "electron": "^24.8.5",
     "electron-builder": "^23.6.0",
     "typescript": "^5.0.4",
     "vite": "^4.2.1",
